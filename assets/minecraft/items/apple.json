@@ -1,0 +1,55 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": "{start:true}",
+        "model": {
+          "type": "minecraft:model",
+          "model": "lonesome:item/start_button"
+        }
+      },
+      {
+        "when": "{stars:1}",
+        "model": {
+          "type": "minecraft:model",
+          "model": "lonesome:item/onestar"
+        }
+      },
+      {
+        "when": "{stars:2}",
+        "model": {
+          "type": "minecraft:model",
+          "model": "lonesome:item/twostars"
+        }
+      },
+      {
+        "when": "{stars:3}",
+        "model": {
+          "type": "minecraft:model",
+          "model": "lonesome:item/threestars"
+        }
+      },
+      {
+        "when": "{stars:4}",
+        "model": {
+          "type": "minecraft:model",
+          "model": "lonesome:item/fourstars"
+        }
+      },
+      {
+        "when": "{stars:5}",
+        "model": {
+          "type": "minecraft:model",
+          "model": "lonesome:item/fivestars"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/apple"
+    }
+  }
+}

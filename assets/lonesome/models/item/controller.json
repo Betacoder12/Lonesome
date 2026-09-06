@@ -1,0 +1,104 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"0": "lonesome:item/controller_texture",
+		"particle": "lonesome:item/controller_texture"
+	},
+	"elements": [
+		{
+			"name": "body",
+			"from": [0, 7, 2],
+			"to": [16, 10, 13],
+			"rotation": {"angle": -27.5, "axis": "x", "origin": [7, 7, 7]},
+			"faces": {
+				"north": {"uv": [8, 0, 16, 1.5], "texture": "#0"},
+				"east": {"uv": [8, 3, 13.5, 4.5], "texture": "#0"},
+				"south": {"uv": [8, 1.5, 16, 3], "texture": "#0"},
+				"west": {"uv": [8, 4.5, 13.5, 6], "texture": "#0"},
+				"up": {"uv": [8, 5.5, 0, 0], "texture": "#0"},
+				"down": {"uv": [8, 5.5, 0, 11], "texture": "#0"}
+			}
+		},
+		{
+			"name": "buttonB",
+			"from": [6, 10, 4],
+			"to": [9, 11, 7],
+			"rotation": {"angle": -27.5, "axis": "x", "origin": [7, 7, 7]},
+			"faces": {
+				"north": {"uv": [11, 7, 12.5, 7.5], "texture": "#0"},
+				"east": {"uv": [11, 7.5, 12.5, 8], "texture": "#0"},
+				"south": {"uv": [11, 8, 12.5, 8.5], "texture": "#0"},
+				"west": {"uv": [11, 8.5, 12.5, 9], "texture": "#0"},
+				"up": {"uv": [9.5, 7.5, 8, 6], "texture": "#0"},
+				"down": {"uv": [9.5, 7.5, 8, 9], "texture": "#0"}
+			}
+		},
+		{
+			"name": "buttonA",
+			"from": [2, 10, 8],
+			"to": [5, 11, 11],
+			"rotation": {"angle": -27.5, "axis": "x", "origin": [7, 7, 7]},
+			"faces": {
+				"north": {"uv": [11, 9, 12.5, 9.5], "texture": "#0"},
+				"east": {"uv": [11, 9.5, 12.5, 10], "texture": "#0"},
+				"south": {"uv": [11, 10, 12.5, 10.5], "texture": "#0"},
+				"west": {"uv": [11, 10.5, 12.5, 11], "texture": "#0"},
+				"up": {"uv": [9.5, 10.5, 8, 9], "texture": "#0"},
+				"down": {"uv": [11, 6, 9.5, 7.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "stick",
+			"from": [11, 10, 7],
+			"to": [13, 14, 9],
+			"rotation": {"angle": -27.5, "axis": "x", "origin": [7, 7, 7]},
+			"faces": {
+				"north": {"uv": [3, 11, 4, 13], "texture": "#0"},
+				"east": {"uv": [4, 11, 5, 13], "texture": "#0"},
+				"south": {"uv": [5, 11, 6, 13], "texture": "#0"},
+				"west": {"uv": [6, 11, 7, 13], "texture": "#0"},
+				"up": {"uv": [12, 7, 11, 6], "texture": "#0"},
+				"down": {"uv": [8, 11, 7, 12], "texture": "#0"}
+			}
+		},
+		{
+			"name": "ball",
+			"from": [10.5, 14, 6.5],
+			"to": [13.5, 17, 9.5],
+			"rotation": {"angle": -27.5, "axis": "x", "origin": [7, 7, 7]},
+			"faces": {
+				"north": {"uv": [9.5, 7.5, 11, 9], "texture": "#0"},
+				"east": {"uv": [9.5, 9, 11, 10.5], "texture": "#0"},
+				"south": {"uv": [8, 10.5, 9.5, 12], "texture": "#0"},
+				"west": {"uv": [9.5, 10.5, 11, 12], "texture": "#0"},
+				"up": {"uv": [1.5, 12.5, 0, 11], "texture": "#0"},
+				"down": {"uv": [3, 11, 1.5, 12.5], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "controller_body",
+			"origin": [0, 10, 0],
+			"scope": 0,
+			"color": 0,
+			"children": [
+				0,
+				{
+					"name": "buttons",
+					"origin": [7, 7, 7],
+					"scope": 0,
+					"color": 0,
+					"children": [1, 2]
+				},
+				{
+					"name": "joystick",
+					"origin": [7, 7, 7],
+					"scope": 0,
+					"color": 0,
+					"children": [3, 4]
+				}
+			]
+		}
+	]
+}
