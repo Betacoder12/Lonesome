@@ -5,7 +5,7 @@
     "component": "minecraft:custom_data",
     "cases": [
       {
-        "when": "{start:true}",
+        "when": "{bb_starts:true}",
         "model": {
           "type": "minecraft:model",
           "model": "lonesome:item/start_button"
